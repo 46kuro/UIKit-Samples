@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIKit_Samples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeD-Po-dTr" userLabel="Container View">
+                                <rect key="frame" x="8" y="44" width="390" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AFq-k0-6ew" userLabel="Container Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kU9-5N-X34" userLabel="Left StackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="apf-EW-sCX">
+                                                        <rect key="frame" x="0.0" y="-1" width="20" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="7Qp-62-gBU"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fi9-wU-sIQ">
+                                                        <rect key="frame" x="24" y="0.0" width="46" height="40"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="B7M-yF-P6t" userLabel="Right StackView">
+                                                <rect key="frame" x="78" y="0.0" width="70" height="40"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Fpe-AZ-3aC">
+                                                        <rect key="frame" x="0.0" y="2.5" width="20" height="35.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="i7M-Nd-7A4"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pv0-l2-ipB">
+                                                        <rect key="frame" x="24" y="0.0" width="46" height="40"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="AFq-k0-6ew" firstAttribute="top" secondItem="JeD-Po-dTr" secondAttribute="top" id="8aZ-Td-dNM"/>
+                                    <constraint firstAttribute="bottom" secondItem="AFq-k0-6ew" secondAttribute="bottom" id="Lgr-eS-tHd"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AFq-k0-6ew" secondAttribute="trailing" constant="-8" id="Yaw-Cf-gRU"/>
+                                    <constraint firstItem="AFq-k0-6ew" firstAttribute="leading" secondItem="JeD-Po-dTr" secondAttribute="leading" id="bHc-s7-O0J"/>
+                                    <constraint firstItem="kU9-5N-X34" firstAttribute="width" relation="lessThanOrEqual" secondItem="JeD-Po-dTr" secondAttribute="width" multiplier="1:2" id="nfZ-nX-QCx"/>
+                                    <constraint firstItem="B7M-yF-P6t" firstAttribute="width" relation="lessThanOrEqual" secondItem="JeD-Po-dTr" secondAttribute="width" multiplier="1:2" id="obs-88-zxx"/>
+                                    <constraint firstAttribute="height" constant="40" id="wSM-EM-qGc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JeD-Po-dTr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kpk-9D-b8L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JeD-Po-dTr" secondAttribute="trailing" constant="16" id="SyX-j2-cqa"/>
+                            <constraint firstItem="JeD-Po-dTr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="a3e-ao-PA6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="Fi9-wU-sIQ" id="sAb-P0-PWZ"/>
+                        <outlet property="button2" destination="Pv0-l2-ipB" id="ND4-AZ-rjW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-222" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+    </resources>
+</document>
